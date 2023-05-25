@@ -1,0 +1,51 @@
+@import "../../styles/variables.scss";
+
+main.page {
+  margin-left: 1rem;
+  font-size: 18px;
+
+  .containerabout-us-page {
+    display: flex;
+    align-items: flex-start;
+    aside {
+      margin-top: 3rem;
+      border: solid 1px $secondarycolor;
+
+      a {
+        display: block;
+        color: $primarycolor;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 1rem;
+        font-weight: bold;
+        border-top: solid 1px $secondarycolor;
+
+        &.active {
+          background-color: $secondarycolor;
+          color: $primarycolor;
+        }
+
+        &:first-child {
+          border-top: none;
+        }
+        &:hover {
+          color: $primarycolor;
+        }
+      }
+    }
+    @include breakpoint-xsmall {
+      display: flex;
+      align-items: flex-start;
+
+      article {
+        flex: 1;
+      }
+
+      aside {
+        width: 200px;
+        margin-left: 4rem;
+        margin-top: 0;
+      }
+    }
+  }
+}

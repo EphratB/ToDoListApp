@@ -1,0 +1,75 @@
+@import "../../styles/variables.scss";
+
+.formcontainer {
+  display: flex;
+  flex-direction: column;
+  background-color: $secondarycolor;
+  margin-top: 1rem;
+  padding-left: 2rem;
+  .description {
+    label {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    input {
+      border: solid 0px $primarycolor;
+      border: none;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .status {
+    label {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    select {
+      border: solid 0px $primarycolor;
+      border: none;
+      margin-left: 3.8rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .addtaskbutton {
+    margin-left: 2rem;
+
+    button {
+      background-color: $primarycolor;
+      display: inline-block;
+      padding: 8px;
+      width: 200px;
+      color: #ffffff;
+      text-align: center;
+      border: 4px double $gray-color;
+      border-radius: 10px;
+      font-size: 28px;
+      cursor: pointer;
+      margin: 5px;
+      label {
+        color: $secondarycolor;
+        font-size: 20px;
+      }
+    }
+    svg {
+      font-size: 30px;
+      color: $secondarycolor;
+    }
+  }
+  .erromessage {
+    border-left: solid 7px $border-color;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: $danger-color;
+  }
+  .loadingComponent {
+    background-color: red;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,25 @@
+.loading {
+    background-color: rgba(255, 255, 255, 0.75);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+  
+    .content span {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+      font-size: 25px;
+      color: #b80257;
+      display: block;
+      text-align: center;
+      margin-top: 0.5rem;
+      font-size: 1.25rem;
+    }
+  }
+  

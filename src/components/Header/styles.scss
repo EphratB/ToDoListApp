@@ -1,0 +1,58 @@
+@import "../../styles/variables";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $primarycolor;
+  border-bottom: solid 5px $border-color;
+  font-family: $titie-font;
+  font-size: 30px;
+  svg {
+    margin-top: 30px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: $secondarycolor;
+  }
+  .author {
+    color: $secondarycolor;
+    font-family: $name-font;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+  @include breakpoint-xsmall {
+    .title {
+      @include size($minsize);
+      font-size: 20px;
+      font-family: "bold";
+      color: $secondarycolor;
+    }
+    .author {
+      font-size: 25px;
+    }
+  }
+
+  @include breakpoint-small {
+    .title {
+      @include size($mikisize);
+      font-size: 25px;
+      font-family: "bold";
+      color: $secondarycolor;
+    }
+    .author {
+      font-size: 30px;
+    }
+  }
+
+  @include breakpoint-large {
+    .title {
+      @include size($maxisize);
+      font-size: 10px;
+      font-size: 30px;
+      color: $secondarycolor;
+    }
+    .author {
+      font-size: 35px;
+    }
+  }
+}

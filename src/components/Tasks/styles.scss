@@ -1,0 +1,22 @@
+@import "../../styles/variables.scss";
+
+.tasks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+.cleartask-button {
+  margin-left: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  svg {
+    text-align: center;
+    margin-right: 5px;
+    font-size: 35px;
+    color: $primarycolor;
+  }
+}
+.headertask {
+  margin-left: 2rem;
+}

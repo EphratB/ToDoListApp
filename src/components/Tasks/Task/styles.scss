@@ -1,0 +1,93 @@
+@import "../../../styles/variables.scss";
+
+.task {
+  border: solid 1px $secondarycolor;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  padding: 1rem;
+
+  svg {
+    font-size: 2rem;
+  }
+  .task-name {
+    font-family: $body-font;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  @include breakpoint-xsmall {
+    width: calc(100% - 1rem);
+
+    .task-name {
+      font-size: 15px;
+    }
+    .icons {
+      display: flex;
+      .removetask {
+        color: $danger-color;
+      }
+
+      svg {
+        margin-right: 5px;
+        margin-left: 1rem;
+        font-size: 25px;
+        color: $primarycolor;
+      }
+    }
+  }
+
+  @include breakpoint-small {
+    width: calc(40% - 1rem);
+
+    .task-name {
+      font-size: 20px;
+    }
+    .icons {
+      display: flex;
+      padding: 1rem;
+      cursor: pointer;
+
+      .removetask {
+        color: $danger-color;
+      }
+      svg {
+        margin-right: 5px;
+        font-size: 30px;
+        color: $primarycolor;
+      }
+    }
+  }
+
+  @include breakpoint-large {
+    max-width: calc(22% - 1rem);
+
+    .task-name {
+      font-size: 23px;
+    }
+    .icons {
+      display: flex;
+      padding: 1rem;
+      svg {
+        margin-right: 5px;
+        font-size: 35px;
+        color: $primarycolor;
+      }
+    }
+  }
+  .task-status {
+    margin-top: 1rem;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+
+    &.completed {
+      background-color: $success-color;
+      color: white;
+    }
+
+    &.open {
+      background-color: $danger-color;
+      color: white;
+    }
+  }
+}
