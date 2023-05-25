@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { IoIosAddCircle } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 // import * as database from "./../../database";
 //import uuid from "react-uuid";
@@ -86,10 +85,7 @@ function Form({ onAddTask }) {
             </label>
           </div>
           <div className="addtaskbutton">
-            <button>
-              <IoIosAddCircle />
-              <label>Add</label>
-            </button>
+            <button>Add Task</button>
           </div>
         </form>
       </div>
